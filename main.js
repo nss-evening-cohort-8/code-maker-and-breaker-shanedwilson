@@ -15,7 +15,7 @@ const encode = () => {
         let coded = encodeStr[i].charCodeAt();
         encodeArr.push(coded);
         encodedMsg = "Your encoded message is " + encodeArr;
-        printToDom(encodedMsg, 'encode-div');
+        printToDom(encodedMsg, 'encode');
         console.log(encodeArr);
     }
 };
