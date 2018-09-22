@@ -30,7 +30,6 @@ const decode = () => {
         decodeArr.push(decoded);
         decodedMsg = "Your decoded message is " + decodeArr.join("");
         printToDom(decodedMsg, 'decode');
-        console.log(decodeArr);
     }
 };
 
