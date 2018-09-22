@@ -22,12 +22,11 @@ const encode = () => {
 
 const decode = () => {
     let decodedMsg = '';
-    let decodeArr = [];
-    let decodeStr = decodeElem.value.split(",");
-    for (i = 0; i < decodeStr.length; i++) {
-        let decoded = String.fromCharCode(decodeStr[i]);
-        decodeArr.push(decoded);
-        decodedMsg = "Your decoded message is " + decodeArr.join("");
+    let decoded = "";
+    let decodeArr = decodeElem.value.split(",");
+    for (i = 0; i < decodeArr.length; i++) {
+        decoded += String.fromCharCode(decodeArr[i]);
+        decodedMsg = "Your decoded message is " + decoded;
         printToDom(decodedMsg, 'decode');
     }
 };
