@@ -24,7 +24,6 @@ const decode = () => {
     let decodedMsg = '';
     let decodeArr = [];
     let decodeStr = decodeElem.value.split(",");
-    console.log(decodeStr);
     for (i = 0; i < decodeStr.length; i++) {
         let decoded = String.fromCharCode(decodeStr[i]);
         decodeArr.push(decoded);
