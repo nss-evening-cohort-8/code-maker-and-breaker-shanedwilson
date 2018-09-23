@@ -17,4 +17,21 @@ h1{
 
 #encode, #decode {
     margin: 20px;
+
+}
+
+input {
+    width: 500px;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#encode {
+    color: blue;
+    font-size: 1.2em;
+}
+
+#decode {
+    color: yellow;
+    font-size: 1.2em;
 }
